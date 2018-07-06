@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "Scripts/scores/scores.min.js",
+    "inputFiles": [
+      "Scripts/scores/scores.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/scores.min.css",
+    "inputFiles": [
+      "Content/scores.css"
+    ]
+  }
+]
