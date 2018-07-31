@@ -15,7 +15,7 @@ namespace Scores {
         if (value === NaN) return true;
         return false;
     }
-    export function ifBlank<T>(value: T, defaultValue: T): T { return (isBlank(value)) ? defaultValue : value; }
+    export function ifBlank<T>(value: T, defaultValue: T): T { return isBlank(value) ? defaultValue : value; }
     export namespace Application {
         export function Config(): Function {
             let config: Function = function (
@@ -50,7 +50,7 @@ namespace Scores {
                     procedure.parameters[name] = {
                         value: parameter.value,
                         isObject: parameter.isObject
-                    }
+                    };
                 });
                 return procedure;
             }
